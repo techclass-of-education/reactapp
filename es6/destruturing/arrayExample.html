@@ -1,0 +1,89 @@
+<script>
+    arr = [5, 6, 3, 2, 4, 56, 18, 99]
+    // a0=arr[0]
+    // a1=arr[1]
+    // a2=arr[2]
+
+
+    let [a1, a2, a3, a4, a5, a6, a7, a8] = arr
+
+    console.log(a6)
+    console.log(a8)
+
+    let [v1, v2, , , , , v4, v5] = arr
+    console.log(v5)
+
+
+    function show([, a20, , , a50, a60, a70, a80]) {
+        console.log(a70)
+    }
+
+    show(arr)
+
+
+    ////////////////////////////////////
+
+
+    let person = {
+        name: "Pooja",
+        age: 34,
+        mobile: "4567890",
+        city: "Nagpur",
+        getName: function () {
+            alert(name)
+        }
+    }
+
+
+    let {name,age,mobile,city,getName}=person
+
+    // getName()
+
+    // console.log(name)
+    // console.log(age)
+    // console.log(mobile)
+    // console.log(city)
+
+
+    // let {name,mobile,city,getName}=person
+
+    // getName()
+
+    // console.log(name)
+    // console.log(age)
+    // console.log(mobile)
+    // console.log(city)
+
+
+
+
+    function personData({name,mobile,getName})
+    {
+        getName()
+        console.log(mobile)
+    }
+
+    personData(person)
+
+
+
+
+
+
+
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

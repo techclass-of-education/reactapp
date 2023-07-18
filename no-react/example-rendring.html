@@ -1,0 +1,26 @@
+<body>
+    <div id="root1"></div>
+</body>
+<script>
+
+
+    const update = function () {
+        element = `
+        <h3>JavaScript:</h3>
+        <form>
+            <input type='text'/>
+        </form>
+        <span>Time: ${new Date().toLocaleTimeString()}</span>`
+
+        document.getElementById("root1").innerHTML = element;
+    };
+
+    setInterval(update, 1000);
+</script>
+
+
+<style>
+    body {
+        font-family: sans-serif;
+    }
+</style>
